@@ -1,33 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Informática</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-<body>
+.navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-<header>
-    <h1>Sitio Web - Informática</h1>
-</header>
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-<nav>
-    <a href="inicio.html">Inicio</a>
-    <a href="institucion.html">Institución</a>
-    <a href="carrera.html">Carrera</a>
-    <a href="plan.html">Plan</a>
-    <a href="novedades.html">Novedades</a>
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Botón móvil */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #203a43;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+</style>
+
+<nav class="navbar">
+  <div class="logo">Mi Página</div>
+  
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <div class="menu" id="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Informática</a>
+    <a href="#">Proyectos</a>
+    <a href="#">Contacto</a>
+  </div>
 </nav>
 
-<section>
-    <h2>Bienvenido</h2>
-    <p>Selecciona una sección del menú para ver la información.</p>
-</section>
-
-<footer>
-    <p>Correo: info@informatica.com</p>
-</footer>
-
-</body>
-</html>
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
