@@ -1,45 +1,114 @@
-/* MENÚ PRINCIPAL */
-.menu {
-    list-style: none;
+
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+}
+
+header {
+    background: linear-gradient(90deg, #1e293b, #0ea5e9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+
+nav {
     background: #020617;
-    display: flex;
-    justify-content: center;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
 
-.menu li {
-    position: relative;
-}
-
-.menu a {
-    display: block;
-    padding: 12px 20px;
+nav a {
     color: #38bdf8;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-.menu a:hover {
-    background: #1e293b;
+
+nav a:hover {
     color: #22c55e;
+    transform: scale(1.1);
 }
 
-/* SUBMENÚ */
-.submenu {
-    display: none;
-    position: absolute;
-    background: #020617;
-    list-style: none;
-    padding: 0;
-    min-width: 180px;
+
+section {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 
-.submenu li a {
+
+img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #38bdf8;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #0ea5e9;
+    color: white;
     padding: 10px;
 }
 
-/* Mostrar al pasar el mouse */
-.menu li:hover .submenu {
-    display: block;
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #1e293b;
+}
+
+tr:hover {
+    background: #334155;
+    transition: 0.3s;
+}
+
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #38bdf8;
+}
+
+
+section {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
