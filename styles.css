@@ -8,7 +8,7 @@ body {
 p {
   text-align: justify;   /* Justifica el texto */
   line-height: 1.5;      /* Interlineado 1.5 */
-  font-style: cursive;    /* Letra cursiva */
+  font-style: italic;    /* Letra cursiva */
 }
 
 header {
