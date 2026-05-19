@@ -112,3 +112,12 @@ section {
         transform: translateY(0);
     }
 }
+video {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo */
+  height: auto;
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  object-fit: cover; /* Ajuste para que no se deforme */
+  filter: brightness(0.9); /* Filtro de brillo opcional */
+}
