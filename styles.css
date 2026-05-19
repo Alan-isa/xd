@@ -121,3 +121,24 @@ video {
   object-fit: cover; /* Ajuste para que no se deforme */
   filter: brightness(0.9); /* Filtro de brillo opcional */
 }
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
