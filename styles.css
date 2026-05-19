@@ -169,3 +169,6 @@ header h1 {
   height: auto;
   cursor: pointer;
   z-index: 1000;
+html {
+  scroll-behavior: smooth; /* desplazamiento suave */
+}
