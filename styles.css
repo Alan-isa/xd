@@ -160,16 +160,20 @@ header h1 {
   text-align: center;
 }
 
-/* Logo fijo mientras se mueve la página */
-.logo {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 80px;
-  height: auto;
-  cursor: pointer;
-  z-index: 1000;
+html{
+    scroll-behavior: smooth;
 }
-html {
-  scroll-behavior: smooth; /* desplazamiento suave */
+
+.logo{
+    width: 70px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
