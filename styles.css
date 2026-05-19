@@ -5,6 +5,11 @@ body {
     background: linear-gradient(135deg, #020617, #0f172a);
     color: #e2e8f0;
 }
+p {
+  text-align: justify;   /* Justifica el texto */
+  line-height: 1.5;      /* Interlineado 1.5 */
+  font-style: cursive;    /* Letra cursiva */
+}
 
 header {
     background: linear-gradient(90deg, #1e293b, #0ea5e9);
